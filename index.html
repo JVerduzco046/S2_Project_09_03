@@ -74,6 +74,98 @@
         <form>
             <textarea name="sampleText" id="sampleBox" placeholder=" Enter sample text and press the tab key" autofocus
                 tabindex="1" wrap="hard"></textarea>
+            <p>select the css style values from the form below and preview the effect on the sample text in the preview
+                box.
+            </p>
+            <fieldset>
+                <legend>Fonts</legend>
+                <label for="fontfamily">Font Family</label>
+                <select name="fontfamily" id="fontfamily">
+                    <optgroup label="Generic">
+                        <option value="default">Default</option>
+                        <option value="serif">Serif</option>
+                        <option value="sans-serif">Sans-Serif</option>
+                        <option value="monospace">Monospace</option>
+                        <option value="cursive">Cursive</option>
+                        <option value="fantasy">Fantasy</option>
+                    </optgroup>
+                    <optgroup label="Specific">
+                        <option value="arial">Arial</option>
+                        <option value="bookantiqua">'Book Antiqua'</option>
+                        <option value="couriernew">'Courier New'</option>
+                        <option value="geneva">Geneva</option>
+                        <option value="helvetica">Helvetica</option>
+                        <option value="impact">Impact</option>
+                        <option value="palatino">Palatino</option>
+                        <option value="tohoma">Tohoma</option>
+                        <option value="timesnewroman">Times New Roman</option>
+                    </optgroup>
+                </select>
+                <label for="fontstyle">Font Style</label>
+                <select name="fontstyle" id="fontstyle">
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic</option>
+                    <option value="oblique">Oblique</option>
+                </select>
+                <label for="fontweight">Font Weight</label>
+                <select name="fontweight" id="fontweight">
+                    <option value="normal">Normal</option>
+                    <option value="bold">Bold</option>
+                </select>
+                <label for="fontdecoration">Font Decoration</label>
+                <select name="fontdecoration" id="fontdecoration">
+                    <option value="none">None</option>
+                    <option value="line-through">line-through</option>
+                    <option value="overline">Overline</option>
+                    <option value="uppercase">Upercase</option>
+                </select>
+
+                <label for="fontvariant">Font Variant</label>
+                <select name="fontvariant" id="fontvariant">
+                    <option value="normal">Normal</option>
+                    <option value="smallcaps">Small-caps</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Colors</legend>
+                <label for="color">Font Color (hexadecimal)</label>
+                <input type="color" name="fontcolor" id="fontcolor" value="#000000">
+                <label for="backgroundcolor">Background Color (hexadecimal) </label>
+                <input name="backgroundcolor" id="backgroundcolor" type="color" placeholder=" #rrggbb" value="#FFFFFF">
+            </fieldset>
+            <fieldset>
+                <legend>Sizes</legend>
+                <label for="fontsize">Font Size (px)</label>
+                <div class="slider">
+                    8
+                    <input name="fontsize" id="fontsize" type="range" max="40" min="8" step="1" value="14">
+                    40
+                </div>
+                <label for="letterspacing">Letter Spacing(px)</label>
+                <div class="slider">
+                    0
+                    <input type="range" name="letterspacing" id="letterspacing" min="0" max="10" step="1" value="0">
+                    10
+                </div>
+                <label for="wordspacing">Word Spacing</label>
+                <div class="slider">
+                    0
+                    <input type="range" name="wordspacing" id="wordspacing" min="0" max="10" step="1" value="0">
+                    10
+                </div>
+                <label for="lineheight">Line Height</label>
+                <div class="slider">
+                    0
+                    <input type="range" name="lineheight" id="lineheight" min="0" max="4" step=".2" value="1">
+                    4
+                </div>
+                <label for="textindent">Text Indent</label>
+                <div class="slider">
+                    0
+                    <input type="range" name="textindent" id="textindent" min="0" max="10" step="1" value="0">
+                    10
+                </div>
+            </fieldset>
         </form>
         <h2>Rendered Text</h2>
         <div id="output"></div>
