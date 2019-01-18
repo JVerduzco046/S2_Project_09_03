@@ -90,15 +90,15 @@
                         <option value="fantasy">Fantasy</option>
                     </optgroup>
                     <optgroup label="Specific">
-                        <option value="arial">Arial</option>
-                        <option value="bookantiqua">'Book Antiqua'</option>
-                        <option value="couriernew">'Courier New'</option>
-                        <option value="geneva">Geneva</option>
-                        <option value="helvetica">Helvetica</option>
-                        <option value="impact">Impact</option>
-                        <option value="palatino">Palatino</option>
-                        <option value="tohoma">Tohoma</option>
-                        <option value="timesnewroman">Times New Roman</option>
+                        <option value="Arial">Arial</option>
+                        <option value="'Book Antiqua'">'Book Antiqua'</option>
+                        <option value="'Courier New'">'Courier New'</option>
+                        <option value="Geneva">Geneva</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Palatino">Palatino</option>
+                        <option value="Tahoma">Tahoma</option>
+                        <option value="'Times New Roman'">Times New Roman</option>
                     </optgroup>
                 </select>
                 <label for="fontstyle">Font Style</label>
@@ -112,24 +112,30 @@
                     <option value="normal">Normal</option>
                     <option value="bold">Bold</option>
                 </select>
-                <label for="fontdecoration">Font Decoration</label>
+                <label for="textdecoration">Text Decoration</label>
                 <select name="fontdecoration" id="fontdecoration">
                     <option value="none">None</option>
                     <option value="line-through">line-through</option>
                     <option value="overline">Overline</option>
-                    <option value="uppercase">Upercase</option>
+                    <option value="underline">Underline</option>
                 </select>
-
+                <label for="texttransform">Text Transform</label>
+                <select name="texttransform" id="texttransform">
+                    <option value="none">None</option>
+                    <option value="capitalize">Capitalize</option>
+                    <option value="lowercase">lowercase</option>
+                    <option value="uppercase">Uppercase</option>
+                </select>
                 <label for="fontvariant">Font Variant</label>
                 <select name="fontvariant" id="fontvariant">
                     <option value="normal">Normal</option>
-                    <option value="smallcaps">Small-caps</option>
+                    <option value="small-caps">Small-caps</option>
                 </select>
             </fieldset>
             <fieldset>
                 <legend>Colors</legend>
                 <label for="color">Font Color (hexadecimal)</label>
-                <input type="color" name="fontcolor" id="fontcolor" value="#000000">
+                <input type="color" name="color" id="color" value="#000000">
                 <label for="backgroundcolor">Background Color (hexadecimal) </label>
                 <input name="backgroundcolor" id="backgroundcolor" type="color" placeholder=" #rrggbb" value="#FFFFFF">
             </fieldset>
@@ -156,7 +162,7 @@
                 <label for="lineheight">Line Height</label>
                 <div class="slider">
                     0
-                    <input type="range" name="lineheight" id="lineheight" min="0" max="4" step=".2" value="1">
+                    <input type="range" name="lineheight" id="lineheight" min="0" max="4" step="0.2" value="1">
                     4
                 </div>
                 <label for="textindent">Text Indent</label>
