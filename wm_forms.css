@@ -73,6 +73,7 @@ select {
     width: 120px;
 }
 
+/* By tageting the atrribute color we select all inputs with the type of color and allows to change only those inputs */
 input[type="color"] {
     display: block;
     float: left;
@@ -87,6 +88,16 @@ textarea {
 }
 
 /* Placeholder Styles */
+
+/* Inorder to maeke the text area box a beige color with red text diiferent webkits  were needed for older browser  */
+
+textarea[placeholder] {
+    background-color: rgb(255, 255, 191);
+    color: rgb(255, 151, 151);
+    font-size: 1.5em;
+}
+
+
 textarea:-ms-input-placeholder {
     background-color: rgb(255, 255, 191);
     color: rgb(255, 151, 151);
